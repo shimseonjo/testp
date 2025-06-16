@@ -103,8 +103,61 @@ npm run type-check  # TypeScript 타입 체크
 ## 🔒 환경 변수
 
 ```env
+# Korean Health Monitoring App (bODYFENCE) Environment Variables
+
+# 앱 환경 설정
 NODE_ENV=development
-VITE_API_URL=your_api_url_here
+VITE_APP_NAME=bODYFENCE
+VITE_APP_VERSION=1.0.0
+
+# API 설정
+VITE_API_URL=http://localhost:8080/api
+VITE_API_VERSION=v1
+
+# 낙상 감지 서비스 설정
+VITE_FALL_DETECTION_ENDPOINT=/fall-detection
+VITE_EMERGENCY_CONTACT_ENDPOINT=/emergency-contact
+VITE_USER_LOCATION_ENDPOINT=/user-location
+
+# 알림 서비스 설정 (Firebase 등)
+VITE_FIREBASE_API_KEY=your_firebase_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=123456789
+VITE_FIREBASE_APP_ID=your_app_id
+
+# 개발 환경 설정
+VITE_DEV_MODE=true
+VITE_SHOW_TEST_PANEL=true
+VITE_MOCK_API_RESPONSES=true
+
+# 보안 설정
+VITE_ENCRYPTION_KEY=your_encryption_key_here
+VITE_JWT_SECRET=your_jwt_secret_here
+
+# 분석 및 로깅
+VITE_ANALYTICS_ENABLED=false
+VITE_GOOGLE_ANALYTICS_ID=GA-XXXX-X
+VITE_SENTRY_DSN=your_sentry_dsn_here
+
+# 위치 서비스
+VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
+VITE_LOCATION_SERVICE_ENABLED=true
+
+# 푸시 알림
+VITE_VAPID_PUBLIC_KEY=your_vapid_public_key_here
+VITE_PUSH_NOTIFICATIONS_ENABLED=true
+
+# 앱 설정
+VITE_DEFAULT_LANGUAGE=ko
+VITE_DEFAULT_TIMEZONE=Asia/Seoul
+VITE_MAX_FILE_SIZE=5242880
+VITE_SUPPORTED_IMAGE_TYPES=image/jpeg,image/png,image/webp
+
+# 디버그 설정
+DEBUG=bodyfence:*
+VITE_LOG_LEVEL=info
 ```
 
 ## 📝 라이센스
